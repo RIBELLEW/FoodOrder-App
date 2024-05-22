@@ -21,7 +21,7 @@ export default function Meals() {
     <ul id="meals">
       {loadedMeals.map((meal) => (
         <li key={meal.id}>
-          <MealItem />
+          <MealItem meal={meal} />
         </li>
       ))}
     </ul>
